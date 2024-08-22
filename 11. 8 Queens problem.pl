@@ -24,3 +24,6 @@ safe_queens([Q|Qs], Q0, D0) :-
     abs(Q0 - Q) #\= D0,       % Ensure not on the same diagonal
     D1 #= D0 + 1,             % Increment diagonal distance
     safe_queens(Qs, Q0, D1).  % Continue checking for remaining queens
+
+%Query ?- n_queens(8, Qs).
+
